@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.area{
+    width:80%;
+    margin: 20px auto; 
+}
+
+.area .header{
+    width: 100%;
+    height: 150px;
+    background-color:rgb(31,34,43);
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    display:flex;
+    top: 30px;
+    left: 40px;
+    position:absolute;
+    box-shadow: 3px 10px 10px gray;
+    border:5px solid white;
+    cursor :pointer;
+    transition:.5s;
+}
+.header img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgb(0, 0, 0.5)
+}
+.header-text{
+    color: white;
+    width: 70%;
+    margin-left: auto;
+}
+.header-text h1{
+    font-size:80px;
+    font-weight: normal;
+    align-items: center;
+    color:white;
+    font-family: serif;
+}
+.header-text p{
+    font-size: 25px;
+    color:white;
+    font-family: serif;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width:30%;
+    background: rgba(0,0,0,0.1);
+    padding-bottom: 80px;
+}
+
+.left-area .Contact{
+    margin-top: 70px;
+    text-align: center;
+}
+.Contact h4{
+    font-size: 25px;
+    padding-top: 30px;
+    font-family: serif;
+    font-weight: bold;
+}
+.Contact h5{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+.Contact p{
+    font-size: 19px;
+    font-family: serif;
+    margin-top: -10px;
+}
+.Skills{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Skills h1{
+    font-family: serif;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 25px;   
+    font-weight: bold; 
+}
+.bars{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px 5px;
+    padding: 0 20px;
+}
+.bars bar p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.bar span{
+    display: block;
+    width:100%;
+    height:10px;
+    background-color: rgb(192, 191,191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position:relative;
+}
+.bar span::before{
+    position: absolute;
+    content:"";
+    width:80%;
+    height:80%;
+    background-color: black;
+    top:50%;
+    left:2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.follow h1{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: serif;
+}
+.follow h4{
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-family: serif;
+}
+.follow p{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    font-family: serif;
+}
+
+.right-area{
+    width:75%;
+    padding:60px; 
+    background: rgba(0,0,0,0.02);
+
+}
+.right-area h1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: serif;
+   
+}
+.right-area h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: lightgray;
+}
+.right-area p{
+    padding-left: 70px;
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: justify;
+    word-break: break-all;
+    color: gray;
+}
+.work .work-group{
+    position: relative;
+    padding-top: 20px;
+
+}
+.work-group h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 60px;
+    
+    font-family: serif;
+    
+}
+.work-group h4{
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 70px;
+
+    color:gray;
+}
+
+.education{
+    margin-top: 25px;
+    font-family:serif;
+    padding-left: 15px;
+}
+.edu-group{
+    position: relative;
+    margin: 30px 0;
+}
+.edu-group h4{
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.edu-group span{
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    right: 0;
+
+}
+.edu-group p{
+    padding-left: 50px;
+}
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px black;
+}
+
+@media screen and (max-width: 1200px) and (min-width:985px) {
+    .header-text h1{
+        font-size: 80px;
+        margin-left: 30px;
+
+    }
+    .header-text p{
+        font-size: 25px;
+        margin-left: 30px;
+
+    }
+    
+}
+
+@media screen and (max-width:985px) and (min-width:700px) {
+    .header-text h1{
+        font-size: 35px;
+        margin-left: 90px;
+
+    }
+    .header-text p{
+        font-size: 20px;
+        margin-left: 90px;
+
+    }
+    .edu-group span{
+        margin-left: 20px;
+        top:30px;
+        position: absolute;
+
+    }
+
+    .edu-group h4{
+        margin-left: -50px;
+    }
+
+    .edu-group p{
+        margin-left: -50px;
+    }
+    
+}
+
+@media screen and (max-width:701px) and (min-width:550px) {
+    .header-text h1{
+        font-size: 27px;
+        margin-left: 110px;
+
+    }
+    .header-text p{
+        font-size: 17px;
+        margin-left: 110px;
+
+    }
+    .edu-group span{
+        margin-left: 20px;
+        top:30px;
+        position: absolute;
+
+    }
+
+    .edu-group h4{
+        margin-left: -50px;
+    }
+
+    .edu-group p{
+        margin-left: -50px;
+    }
+    
+}
+
+@media screen and (max-width: 575px){
+    .header img{
+        width: 150px;
+        height: 150px;
+        margin-left: -20px;
+    }
+    .header-text h1{
+        font-size: 25px;
+        margin-left: 80px;
+
+    }
+    .header-text p{
+        font-size: 17px;
+        margin-left: 80px;
+
+    }
+    .edu-group span{
+        margin-left: 20px;
+        top:30px;
+        position: absolute;
+
+    }
+
+    .edu-group h4{
+        margin-left: -50px;
+    }
+
+    .edu-group p{
+        margin-left: -50px;
+    }
+    
+}
